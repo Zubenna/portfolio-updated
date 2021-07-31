@@ -1,21 +1,17 @@
 import React from "react";
 import TypeWriter from "react-typewriter";
+import {
+  FaAngellist,
+  FaLinkedin,
+  FaTwitterSquare,
+  FaGithub,
+} from "react-icons/fa";
 
 const Header = ({ data }) => {
   if (data) {
     var name = data.name;
     var occupation = data.occupation;
     var description = data.description;
-    var city = data.address.city;
-    var networks = data.social.map(function (network) {
-      return (
-        <li key={network.name}>
-          <a href={network.url}>
-            <i className={network.className}></i>
-          </a>
-        </li>
-      );
-    });
   }
 
   return (
@@ -68,13 +64,49 @@ const Header = ({ data }) => {
             <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
           </h1>
           <h3>
-            Based in {city}. <span>{occupation}</span>. {description}.
+            A <span>{occupation}</span>. -{description}.
           </h3>
           <hr />
-          <ul className="social">{networks}</ul>
+          {/* <div className="skill-box">
+            <h2>Front-End</h2>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Bootstrap4</li>
+                <li>JavaScript</li>
+                <li>React & Redux</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            <h2>Back-End</h2>
+              <ul>
+                <li>Ruby</li>
+                <li>Ruby on Rails</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Firebase</li>                
+              </ul>
+            <h2>Testing Tools</h2>
+              <ul>
+                <li>RSpec</li>
+                <li>Capybara</li>
+                <li>Jest</li>              
+              </ul>
+          </div> */}
+          <a href="https://www.linkedin.com/in/nnamdi-emelu/" rel="noreferrer" target="_blank" className="social">
+            <FaLinkedin className="test"/>
+          </a>
+          <a href="https://angel.co/u/emelu-nnamdi-azubuike" rel="noreferrer" target="_blank" className="social">
+            <FaAngellist className="test" />
+          </a>
+          <a href="https://twitter.com/zubenna" rel="noreferrer" target="_blank" className="social">
+            <FaTwitterSquare className="test" />
+          </a>
+          <a href="https://github.com/zubenna" rel="noreferrer" target="_blank" className="social">
+            <FaGithub className="test" />
+          </a>
         </div>
       </div>
-
       <p className="scrolldown">
         <a className="smoothscroll" href="#about">
           <i className="icon-down-circle"></i>

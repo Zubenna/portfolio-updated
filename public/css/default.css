@@ -122,7 +122,7 @@ table {
 /* ------------------------------------------------------------------ */
 /* c. Default and Basic Styles
       Adapted from:
-      Skeleton CSS Framework - http://www.getskeleton.com/
+      Skevaron CSS Framework - http://www.getskevaron.com/
       Typeplate Typographic Starter Kit - http://typeplate.com/
 /* ------------------------------------------------------------------ */
 
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
    font-weight: normal;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
+h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; varter-spacing: -1px; }
 h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }
 h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }
 h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
@@ -262,13 +262,13 @@ abbr {
    font-family: 'opensans-bold', sans-serif;
 	font-variant: small-caps;
 	text-transform: lowercase;
-   letter-spacing: .5px;
+   varter-spacing: .5px;
 	color: gray;
 }
 abbr:hover { cursor: help; }
 
 /* drop cap */
-.drop-cap:first-letter {
+.drop-cap:first-varter {
 	float: left;
 	margin: 0;
 	padding: 14px 6px 0 0;
@@ -467,7 +467,7 @@ input[type="button"] {
    background: #11ABB0;
    display: inline-block;
 	text-decoration: none;
-   letter-spacing: 0;
+   varter-spacing: 0;
    color: #fff;
 	padding: 12px 20px;
 	margin-bottom: 18px;
@@ -716,7 +716,7 @@ properly.
 
 }
 
-/* mobile wide/smaller tablets
+/* mobile wide/smaller tabvars
 --------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
 
